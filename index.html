@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>John Doe | Portfolio</title>
+    <title>Avijit Jana | Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -13,14 +13,13 @@
   <body>
     <header class="site-header" id="top">
       <nav class="container nav">
-        <a href="#top" class="logo">John <span>Doe</span></a>
+        <a href="#top" class="logo">Avijit <span>Jana</span></a>
         <button class="menu-btn" aria-label="Toggle menu"><i class="fa-solid fa-bars"></i></button>
         <ul class="nav-links">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="#experience">Experience</a></li>
           <li><a href="#contact">Contact</a></li>
           <li><a href="#contact" class="btn btn-small">Hire Me</a></li>
         </ul>
@@ -32,7 +31,7 @@
         <div class="container hero-grid">
           <div class="hero-copy">
             <p class="eyebrow">Hello, I'm</p>
-            <h1>John Doe</h1>
+            <h1>Avijit Jana</h1>
             <h2>Senior Full Stack Developer</h2>
             <p>
               I build modern web applications and mobile apps that help businesses
@@ -43,7 +42,7 @@
               <a href="#contact" class="btn btn-outline">Contact Me</a>
             </div>
             <div class="socials">
-              <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="https://linkedin.com/in/avijit-jana-developer" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
               <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
               <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
               <a href="#" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
@@ -62,21 +61,20 @@
 
       <section class="about section" id="about">
         <div class="container about-grid">
-          <img class="about-img" src="assets/image1.png" alt="John working" />
+          <img class="about-img" src="assets/image1.png" alt="Avijit working" />
           <div>
             <p class="eyebrow">About Me</p>
             <h3>Let me introduce myself</h3>
             <p>
               I'm a Full Stack Developer with 11+ years of experience in building
               scalable web applications and mobile apps. I specialize in React,
-              React Native, Node.js and MongoDB.
+              React Native, Node.js, WordPress and MongoDB.
             </p>
             <div class="stats">
               <article><strong>11+</strong><span>Years of Experience</span></article>
               <article><strong>50+</strong><span>Projects Completed</span></article>
               <article><strong>30+</strong><span>Happy Clients</span></article>
             </div>
-            <a href="#" class="btn btn-small">Download CV</a>
           </div>
         </div>
       </section>
@@ -120,37 +118,25 @@
       <section class="projects section" id="projects">
         <div class="container">
           <h4>My Projects</h4>
-          <div class="project-grid">
-            <article class="project">
-              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1000&q=80" alt="Dashboard project" />
-              <h5>Ecommerce Admin Dashboard</h5>
-              <p>Admin dashboard for products, orders, customers and analytics.</p>
-            </article>
-            <article class="project">
-              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1000&q=80" alt="Ecommerce project" />
-              <h5>Multi Vendor Ecommerce App</h5>
-              <p>Full-featured multi vendor ecommerce platform with vendor dashboard.</p>
-            </article>
-            <article class="project">
-              <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1000&q=80" alt="Inventory project" />
-              <h5>Inventory Management System</h5>
-              <p>Inventory and stock management system for businesses with reporting.</p>
-            </article>
+          <div class="project-toolbar">
+            <div class="project-filters">
+              <button class="chip active" data-filter="All" type="button">All</button>
+              <button class="chip" data-filter="React" type="button">React</button>
+              <button class="chip" data-filter="React Native" type="button">React Native</button>
+              <button class="chip" data-filter="WordPress" type="button">WordPress</button>
+              <button class="chip" data-filter="Node.js" type="button">Node.js</button>
+              <button class="chip" data-filter="Ecommerce" type="button">Ecommerce</button>
+            </div>
+            <input id="projectSearch" type="search" placeholder="Search projects or tech..." />
+          </div>
+          <div class="project-grid" id="projectGrid"></div>
+          <p class="project-empty" id="projectEmpty">No projects found. Try another keyword or filter.</p>
+          <div class="project-more-wrap">
+            <button id="loadMoreBtn" class="btn btn-small" type="button">Load More</button>
           </div>
         </div>
       </section>
 
-      <section class="experience section" id="experience">
-        <div class="container">
-          <h4>Experience</h4>
-          <div class="timeline">
-            <article><strong>2012 - 2014</strong><span>Junior Developer</span><small>ABC IT Solutions</small></article>
-            <article><strong>2014 - 2017</strong><span>Frontend Developer</span><small>XYZ Tech Ltd.</small></article>
-            <article><strong>2017 - 2020</strong><span>Full Stack Developer</span><small>Tech Corp</small></article>
-            <article><strong>2020 - Present</strong><span>Senior Developer</span><small>Current Company</small></article>
-          </div>
-        </div>
-      </section>
     </main>
 
     <footer class="contact" id="contact">
@@ -161,15 +147,17 @@
           <a class="btn" href="#">Get In Touch</a>
         </div>
         <div class="contact-list">
-          <p><i class="fa-solid fa-envelope"></i> john.doe@email.com</p>
-          <p><i class="fa-solid fa-phone"></i> +880 1234 567890</p>
-          <p><i class="fa-solid fa-location-dot"></i> Dhaka, Bangladesh</p>
-          <p><i class="fa-brands fa-linkedin-in"></i> linkedin.com/in/johndoe</p>
+          <p><i class="fa-solid fa-envelope"></i> avijitjana07@gmail.com</p>
+          <p><i class="fa-solid fa-phone"></i> +918013688066</p>
+          <p><i class="fa-solid fa-location-dot"></i> Kolkata, India</p>
+          <p><i class="fa-brands fa-linkedin-in"></i> <a href="https://linkedin.com/in/avijit-jana-developer" target="_blank" rel="noopener noreferrer">linkedin.com/in/avijit-jana-developer</a></p>
         </div>
-        <form class="contact-form">
-          <input type="text" placeholder="Your Name" />
-          <input type="email" placeholder="Your Email" />
-          <textarea rows="4" placeholder="Your Message"></textarea>
+        <form class="contact-form" action="https://formspree.io/f/xrejapzp" method="POST">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <input type="hidden" name="_subject" value="New Portfolio Contact Message" />
+          <input type="hidden" name="_captcha" value="false" />
+          <textarea rows="4" name="message" placeholder="Your Message" required></textarea>
           <button class="btn" type="submit">Send Message</button>
         </form>
       </div>

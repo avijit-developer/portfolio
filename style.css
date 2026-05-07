@@ -144,12 +144,83 @@ h4 { font-size: 1.7rem; color: #3f4cf2; margin-bottom: 1.2rem; }
 .card p { color: #4f5c73; line-height: 1.6; }
 
 .projects { background: #fbfcff; }
+.project-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.2rem;
+  flex-wrap: wrap;
+}
+.project-filters {
+  display: flex;
+  gap: .55rem;
+  flex-wrap: wrap;
+}
+.chip {
+  border: 1px solid #d7deef;
+  color: #30415f;
+  background: #fff;
+  border-radius: 999px;
+  padding: .4rem .8rem;
+  font: inherit;
+  font-size: .88rem;
+  cursor: pointer;
+}
+.chip.active {
+  color: #fff;
+  border-color: transparent;
+  background: linear-gradient(110deg, var(--accent-2), var(--accent));
+}
+#projectSearch {
+  width: min(320px, 100%);
+  border: 1px solid #d7deef;
+  border-radius: .55rem;
+  padding: .63rem .8rem;
+  font: inherit;
+}
 .project-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
-.project { border: 1px solid var(--line); border-radius: .8rem; overflow: hidden; background: #fff; }
+.project { border: 1px solid var(--line); border-radius: .8rem; overflow: hidden; background: #fff; display: flex; flex-direction: column; }
 .project img { width: 100%; height: 190px; object-fit: cover; }
 .project h5, .project p { padding: 0 .95rem; }
 .project h5 { margin: .9rem 0 .45rem; font-size: 1.15rem; }
 .project p { color: #4f5c73; line-height: 1.6; padding-bottom: 1rem; }
+.project-meta {
+  display: flex;
+  gap: .4rem;
+  flex-wrap: wrap;
+  padding: 0 .95rem .8rem;
+}
+.tag {
+  font-size: .72rem;
+  font-weight: 600;
+  background: #eff2ff;
+  color: #3d48e1;
+  border-radius: 999px;
+  padding: .28rem .55rem;
+}
+.project-links {
+  margin-top: auto;
+  display: flex;
+  gap: 1rem;
+  padding: 0 .95rem 1rem;
+}
+.project-links a {
+  color: #101a33;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: .9rem;
+}
+.project-empty {
+  margin-top: .7rem;
+  color: #6a7690;
+  display: none;
+}
+.project-more-wrap {
+  margin-top: 1.2rem;
+  display: flex;
+  justify-content: center;
+}
 
 .timeline {
   margin-top: 1.4rem;
