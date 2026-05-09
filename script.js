@@ -69,7 +69,7 @@ const projects = [
   {
     title: 'Multi Vendor Ecommerce App',
     description: 'Full-featured multi vendor ecommerce platform with vendor dashboard.',
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1000&q=80',
+    image: 'assets/Acenda-Booking-05-09-2026_01_58_PM.png',
     tags: ['React', 'Node.js', 'MongoDB', 'Ecommerce'],
     live: '#',
     github: '#'
