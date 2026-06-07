@@ -202,14 +202,27 @@ h4 { font-size: 1.7rem; color: #3f4cf2; margin-bottom: 1.2rem; }
 .project-links {
   margin-top: auto;
   display: flex;
-  gap: 1rem;
+  gap: .65rem;
   padding: 0 .95rem 1rem;
 }
 .project-links a {
-  color: #101a33;
+  display: inline-flex;
+  align-items: center;
+  gap: .45rem;
+  color: #fff;
   text-decoration: none;
   font-weight: 600;
-  font-size: .9rem;
+  font-size: .88rem;
+  background: linear-gradient(110deg, var(--accent-2), var(--accent));
+  border-radius: 999px;
+  padding: .6rem .95rem;
+  box-shadow: 0 8px 18px rgba(93, 95, 255, .16);
+  transition: transform .2s ease, box-shadow .2s ease, filter .2s ease;
+}
+.project-links a:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 24px rgba(93, 95, 255, .22);
+  filter: brightness(1.02);
 }
 .project-empty {
   margin-top: .7rem;

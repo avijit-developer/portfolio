@@ -59,76 +59,100 @@ contactForm.addEventListener('submit', async (e) => {
 
 const projects = [
   {
-    title: 'Ecommerce Admin Dashboard',
-    description: 'Admin dashboard for products, orders, customers and analytics.',
-    image: 'assets/respitely_screenshot.png',
-    tags: ['React', 'Node.js', 'MongoDB', 'Ecommerce'],
-    live: '#',
-    github: '#'
+    title: 'HomeServe Pro Home Services Website',
+    description: 'A modern home-services booking website with service categories, trust signals, reviews and a fast enquiry flow.',
+    image: 'assets/homeserve-pro-preview.png',
+    imagePosition: 'top center',
+    tags: ['React', 'JavaScript', 'Home Services'],
+    live: 'https://homeservice-zeta.vercel.app/'
   },
   {
-    title: 'Multi Vendor Ecommerce App',
-    description: 'Full-featured multi vendor ecommerce platform with vendor dashboard.',
-    image: 'assets/Acenda-Booking-05-09-2026_01_58_PM.png',
-    tags: ['React', 'Node.js', 'MongoDB', 'Ecommerce'],
-    live: '#',
-    github: '#'
+    title: 'Booking Two',
+    description: 'A booking-focused web experience with appointment flow and a conversion-first layout.',
+    image: 'assets/project-previews/booking-two.png',
+    imagePosition: 'top center',
+    tags: ['React', 'Node.js'],
+    live: 'https://booking-two-bice.vercel.app/'
   },
   {
-    title: 'Inventory Management System',
-    description: 'Inventory and stock management system for businesses with reporting.',
-    image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1000&q=80',
-    tags: ['React', 'Node.js', 'MongoDB'],
-    live: '#',
-    github: '#'
+    title: 'Dress House',
+    description: 'Fashion storefront with polished product presentation and retail-friendly browsing.',
+    image: 'assets/project-previews/dresshouse.png',
+    imagePosition: 'top center',
+    tags: ['React', 'Ecommerce'],
+    live: 'https://dresshouse.vercel.app/'
   },
   {
-    title: 'WordPress Business Website',
-    description: 'Fast and SEO-ready business site built with custom WordPress theme.',
-    image: 'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=1000&q=80',
-    tags: ['WordPress', 'PHP', 'SEO'],
-    live: '#',
-    github: '#'
+    title: 'Dress Store',
+    description: 'Online dress store landing page designed for product discovery and sales.',
+    image: 'assets/project-previews/dress-store.png',
+    imagePosition: 'top center',
+    tags: ['React', 'Ecommerce'],
+    live: 'https://dress-store-nine.vercel.app/'
   },
   {
-    title: 'Restaurant Booking Platform',
-    description: 'Online booking system with admin controls and customer notifications.',
-    image: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1000&q=80',
-    tags: ['React', 'Node.js', 'Ecommerce'],
-    live: '#',
-    github: '#'
+    title: 'UrbanCare Service',
+    description: 'Home and local service booking website with trust-first service sections.',
+    image: 'assets/project-previews/urbancare.png',
+    imagePosition: 'top center',
+    tags: ['React', 'Node.js'],
+    live: 'https://service-urbancare.vercel.app/'
   },
   {
-    title: 'Learning Management Portal',
-    description: 'Course delivery platform with progress tracking and quiz modules.',
-    image: 'https://images.unsplash.com/photo-1501504905252-473c47e087f8?auto=format&fit=crop&w=1000&q=80',
-    tags: ['React', 'TypeScript', 'Node.js'],
-    live: '#',
-    github: '#'
+    title: 'Restu Booking',
+    description: 'Reservation and booking website built around fast scheduling and service selection.',
+    image: 'assets/project-previews/restu-booking.png',
+    imagePosition: 'top center',
+    tags: ['React', 'Node.js'],
+    live: 'https://restu-booking.vercel.app/'
   },
   {
-    title: 'Healthcare Appointment App',
-    description: 'Appointment booking portal with doctor schedules and patient dashboard.',
-    image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1000&q=80',
-    tags: ['React', 'Node.js', 'MongoDB'],
-    live: '#',
-    github: '#'
+    title: 'Wolmart',
+    description: 'Marketplace-style ecommerce storefront with product showcase and cart-ready UX.',
+    image: 'assets/project-previews/wolmart.png',
+    imagePosition: 'top center',
+    tags: ['React', 'Ecommerce'],
+    live: 'https://wolmart-pi.vercel.app/'
   },
   {
-    title: 'React Native Delivery App',
-    description: 'Cross-platform delivery app with live tracking, push notifications and wallet payments.',
-    image: 'https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=1000&q=80',
-    tags: ['React Native', 'Node.js', 'MongoDB'],
-    live: '#',
-    github: '#'
+    title: 'MNS Inventory',
+    description: 'Inventory management system for stock tracking, reporting and business operations.',
+    image: 'assets/project-previews/mns-inventory.png',
+    imagePosition: 'top center',
+    tags: ['Node.js', 'MongoDB'],
+    live: 'https://mns-inventory.vercel.app/'
   },
   {
-    title: 'Travel Blog CMS',
-    description: 'Content-rich travel blogging platform built on WordPress and custom plugins.',
-    image: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1000&q=80',
-    tags: ['WordPress', 'PHP', 'MySQL'],
-    live: '#',
-    github: '#'
+    title: 'POS Billing',
+    description: 'Point of sale and billing interface for checkout, invoices and daily operations.',
+    image: 'assets/project-previews/posbilling.png',
+    imagePosition: 'top center',
+    tags: ['Node.js', 'MongoDB'],
+    live: 'https://posbilling-one.vercel.app/'
+  },
+  {
+    title: 'Cus Portal',
+    description: 'Customer portal with account access, support interactions and dashboard layout.',
+    image: 'assets/project-previews/cusportal.png',
+    imagePosition: 'top center',
+    tags: ['React', 'Node.js'],
+    live: 'https://cusportal.vercel.app/'
+  },
+  {
+    title: 'Atlet',
+    description: 'Sport or fitness-focused landing page with a bold hero and action-driven sections.',
+    image: 'assets/project-previews/atlet.png',
+    imagePosition: 'top center',
+    tags: ['React', 'React Native'],
+    live: 'https://atlet-amber.vercel.app/'
+  },
+  {
+    title: 'Blogger',
+    description: 'Blogging platform focused on content discovery and clean reading experience.',
+    image: 'assets/project-previews/blogger.png',
+    imagePosition: 'top center',
+    tags: ['WordPress', 'Content'],
+    live: 'https://blogger-72.vercel.app/'
   }
 ];
 
@@ -159,15 +183,14 @@ const renderProjects = () => {
     .map(
       (project) => `
       <article class="project">
-        <img src="${project.image}" alt="${project.title}" />
+        <img src="${project.image}" alt="${project.title}" ${project.imagePosition ? `style="object-position:${project.imagePosition};"` : ''} />
         <h5>${project.title}</h5>
         <p>${project.description}</p>
         <div class="project-meta">
           ${project.tags.map((tag) => `<span class="tag">${tag}</span>`).join('')}
         </div>
         <div class="project-links">
-          <a href="${project.live}" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
-          <a href="${project.github}" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub</a>
+          <a href="${project.live}" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Link</a>
         </div>
       </article>
     `
