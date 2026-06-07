@@ -21,18 +21,33 @@ const SPREADSHEET_ID = '1bsTFv2alr7eXQjNzvKqoyCZ1QNmB4gRsIoB3cdAXkGo';
 const SHEET_NAME = 'Sheet1';
 
 function doPost(e) {
+  const data = e && e.postData
+    ? JSON.parse(e.postData.contents || '{}')
+    : {};
+
+  saveView(data);
+
+  return ContentService
+    .createTextOutput(JSON.stringify({ ok: true }))
+    .setMimeType(ContentService.MimeType.JSON);
+}
+
+function testViewLog() {
+  saveView({
+    timestamp: new Date().toISOString(),
+    page: 'manual-test',
+    title: 'Manual Test'
+  });
+}
+
+function saveView(data) {
   const sheet = SpreadsheetApp.openById(SPREADSHEET_ID).getSheetByName(SHEET_NAME);
-  const data = JSON.parse(e.postData.contents || '{}');
 
   sheet.appendRow([
     data.timestamp || new Date().toISOString(),
     data.page || '',
     data.title || ''
   ]);
-
-  return ContentService
-    .createTextOutput(JSON.stringify({ ok: true }))
-    .setMimeType(ContentService.MimeType.JSON);
 }
 ```
 
@@ -64,3 +79,37 @@ After deployment, each page open will save one view row to the Google Sheet.
 ## Notes
 
 This only tracks view events. It does not collect IP, country, city, device, or user details.
+
+## Troubleshooting
+
+If the site opens but no row appears in the Sheet, check the Apps Script deployment:
+
+```text
+Deploy > Manage deployments > Edit
+Execute as: Me
+Who has access: Anyone
+Version: New version
+Deploy
+```
+
+If `Who has access` is not `Anyone`, the endpoint returns `403 Forbidden` and the browser silently fails because the tracker uses `no-cors`.
+
+Also confirm the Google Sheet tab name matches this line:
+
+```javascript
+const SHEET_NAME = 'Sheet1';
+```
+
+Do not manually run `doPost` from the Apps Script editor. It only works when the website sends a POST request. To test from the editor, select and run this function instead:
+
+```javascript
+testViewLog
+```
+
+If the endpoint shows `Script function not found: doPost`, the Apps Script code was not pasted/saved correctly or the deployment is using an old version. Make sure the script has this exact function name:
+
+```javascript
+function doPost(e) {
+```
+
+Then click `Save`, deploy a `New version`, and copy the Web app URL again.

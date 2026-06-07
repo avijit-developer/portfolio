@@ -1,7 +1,7 @@
 const menuBtn = document.querySelector('.menu-btn');
 const navLinks = document.querySelector('.nav-links');
 const navAnchors = document.querySelectorAll('.nav-links a');
-const VISITOR_LOG_ENDPOINT = 'https://script.google.com/macros/s/AKfycbzlv6BrilMhweECxjMgyoEX-292TUdQyP4gNJRg3nGKGcr3cDZpXoy2ephXBeI4gmqokw/exec';
+const VISITOR_LOG_ENDPOINT = 'https://script.google.com/macros/s/AKfycbxkvr0r2-3gkOq4WfNCa9QbHrwaKLaZyziBtq_3hfnXIiYPNICirfI9en0AiUmiyeZpnA/exec';
 
 const logVisitor = async () => {
   if (!VISITOR_LOG_ENDPOINT) return;
