@@ -249,6 +249,14 @@ const projects = [
     imagePosition: 'top center',
     tags: ['WordPress', 'Home Services'],
     live: 'https://www.drwhitegoods.co.uk/'
+  },
+  {
+    title: 'TrahiMart Admin Dashboard',
+    description: 'Multi-vendor ecommerce admin dashboard with sales analytics, order management, vendor approvals and inventory tracking.',
+    image: 'assets/project-previews/client-sites/trahimart-admin.png',
+    imagePosition: 'top center',
+    tags: ['React', 'Node.js', 'MongoDB', 'Ecommerce'],
+    live: 'https://trahimart.com/admin/dashboard'
   }
 ];
 
