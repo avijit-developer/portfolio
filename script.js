@@ -67,24 +67,24 @@ const projects = [
     live: 'https://homeservice-zeta.vercel.app/'
   },
   {
-    title: 'Booking Two',
-    description: 'A booking-focused web experience with appointment flow and a conversion-first layout.',
+    title: 'Acenda Booking',
+    description: 'A luxury travel booking platform with live availability search, account center and confirmed trip management.',
     image: 'assets/project-previews/booking-two.png',
     imagePosition: 'top center',
     tags: ['React', 'Node.js'],
     live: 'https://booking-two-bice.vercel.app/'
   },
   {
-    title: 'Dress House',
-    description: 'Fashion storefront with polished product presentation and retail-friendly browsing.',
+    title: 'Vogue Fashion Store',
+    description: 'Premium fashion storefront with curated collections, polished product presentation and retail-friendly browsing.',
     image: 'assets/project-previews/dresshouse.png',
     imagePosition: 'top center',
     tags: ['React', 'Ecommerce'],
     live: 'https://dresshouse.vercel.app/'
   },
   {
-    title: 'Dress Store',
-    description: 'Online dress store landing page designed for product discovery and sales.',
+    title: 'Dressify',
+    description: 'Elegant dress collection storefront designed for product discovery, category browsing and sales.',
     image: 'assets/project-previews/dress-store.png',
     imagePosition: 'top center',
     tags: ['React', 'Ecommerce'],
@@ -153,6 +153,102 @@ const projects = [
     imagePosition: 'top center',
     tags: ['WordPress', 'Content'],
     live: 'https://blogger-72.vercel.app/'
+  },
+  {
+    title: 'Khasnobish Real Estate',
+    description: 'Premium real estate developer website with featured projects, site visit booking and client testimonials.',
+    image: 'assets/project-previews/client-sites/khasnobishgroup.png',
+    imagePosition: 'top center',
+    tags: ['WordPress', 'JavaScript'],
+    live: 'https://khasnobishgroup.in/'
+  },
+  {
+    title: 'LeadBridge Marketing',
+    description: 'Healthcare marketing platform with lead generation services, conversion tracking and ROI-focused campaigns.',
+    image: 'assets/project-previews/client-sites/leadbridgemarketing.png',
+    imagePosition: 'top center',
+    tags: ['WordPress', 'JavaScript'],
+    live: 'https://leadbridgemarketing.com/'
+  },
+  {
+    title: 'The Cadenza',
+    description: 'Luxury residential project website with amenities, floor plans, gallery and site visit enquiry flow.',
+    image: 'assets/project-previews/client-sites/thecadenza.png',
+    imagePosition: 'top center',
+    tags: ['WordPress', 'JavaScript'],
+    live: 'https://thecadenza.in/dev/'
+  },
+  {
+    title: 'eInvestmart',
+    description: 'Financial services website with investment planning, SIP calculator, services and client enquiry forms.',
+    image: 'assets/project-previews/client-sites/einvestmart.png',
+    imagePosition: 'top center',
+    tags: ['WordPress', 'JavaScript'],
+    live: 'https://einvestmart.in/'
+  },
+  {
+    title: 'Sampurna Kolkata',
+    description: 'Residential project website with location highlights, amenities, gallery, floor plans and walkthrough.',
+    image: 'assets/project-previews/client-sites/sampurnakolkata.png',
+    imagePosition: 'top center',
+    tags: ['WordPress', 'JavaScript'],
+    live: 'https://sampurnakolkata.com/'
+  },
+  {
+    title: 'CodeflixPro',
+    description: 'Digital agency website showcasing web development, portfolio, services and technology expertise.',
+    image: 'assets/project-previews/client-sites/coodeflixpro.png',
+    imagePosition: 'top center',
+    tags: ['WordPress', 'JavaScript'],
+    live: 'https://coodeflixpro.com/'
+  },
+  {
+    title: 'Atreyaa Kolkata',
+    description: 'Luxury high-rise residential website with gallery, floor plans, amenities and virtual walkthrough.',
+    image: 'assets/project-previews/client-sites/atreyaa.png',
+    imagePosition: 'top center',
+    tags: ['WordPress', 'JavaScript'],
+    live: 'https://atreyaa.in/'
+  },
+  {
+    title: 'Bathtub Refinishing Cincinnati',
+    description: 'Local home services website for bathtub refinishing, tile reglazing and bathroom restoration.',
+    image: 'assets/project-previews/client-sites/bathtubreglazingcincinnati.png',
+    imagePosition: 'top center',
+    tags: ['WordPress', 'Home Services'],
+    live: 'https://bathtubreglazingcincinnati.com/'
+  },
+  {
+    title: 'Web Spider Analysis',
+    description: 'Digital marketing agency website with SEO, social media, PPC services and case studies.',
+    image: 'assets/project-previews/client-sites/webspideranalysis.png',
+    imagePosition: 'top center',
+    tags: ['WordPress', 'JavaScript'],
+    live: 'https://webspideranalysis.com/'
+  },
+  {
+    title: 'Chelsea Technologies',
+    description: 'Corporate technology website for managed IT, cloud services, compliance and business transformation.',
+    image: 'assets/project-previews/client-sites/chelsea-tech.png',
+    imagePosition: 'top center',
+    tags: ['WordPress', 'JavaScript'],
+    live: 'https://www.chelsea-tech.com/'
+  },
+  {
+    title: 'Dr Mandi Cosmetic Skin Clinic',
+    description: 'Cosmetic skin clinic website with treatments, products, appointments and client reviews.',
+    image: 'assets/project-previews/client-sites/drmandicosmeticsc.png',
+    imagePosition: 'top center',
+    tags: ['WordPress', 'Ecommerce'],
+    live: 'https://mandi.performancepalace.com.au/'
+  },
+  {
+    title: 'Dr Whitegoods',
+    description: 'UK appliance repair website with online booking, service categories and same-day appointments.',
+    image: 'assets/project-previews/client-sites/drwhitegoods.png',
+    imagePosition: 'top center',
+    tags: ['WordPress', 'Home Services'],
+    live: 'https://www.drwhitegoods.co.uk/'
   }
 ];
 
