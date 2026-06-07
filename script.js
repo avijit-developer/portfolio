@@ -257,6 +257,62 @@ const projects = [
     imagePosition: 'top center',
     tags: ['React', 'Node.js', 'MongoDB', 'Ecommerce'],
     live: 'https://trahimart.com/admin/dashboard'
+  },
+  {
+    title: 'Bianco Evento',
+    description: 'B2B bridal fashion mobile app for retailers with collection browsing, real-time stock, order management and push notifications.',
+    image: 'assets/project-previews/mobile-apps/bianco-evento-screen.png',
+    imagePosition: 'top center',
+    tags: ['React Native', 'Node.js', 'Ecommerce'],
+    live: 'https://play.google.com/store/apps/details?id=com.biancoeventoapp&hl=en_IN'
+  },
+  {
+    title: 'TrahiMart',
+    description: 'Multi-category shopping app with smart search, wishlist, secure checkout, order tracking and real-time delivery updates.',
+    image: 'assets/project-previews/mobile-apps/trahimart.png',
+    imagePosition: 'top center',
+    tags: ['React Native', 'Node.js', 'Ecommerce'],
+    live: 'https://play.google.com/store/apps/details?id=com.trahimart&hl=en_IN'
+  },
+  {
+    title: 'Ordering Customer App',
+    description: 'White-label customer ordering app with product browsing, checkout, order tracking, push notifications and multi-business support.',
+    image: 'assets/project-previews/mobile-apps/ordering-customer.png',
+    imagePosition: 'top center',
+    tags: ['React Native', 'Node.js', 'Ecommerce'],
+    live: 'https://play.google.com/store/apps/details?id=com.ordering.onlineorderingappv5&hl=en_IN'
+  },
+  {
+    title: 'Ordering Store App',
+    description: 'Merchant order manager app for restaurants and businesses with real-time notifications, accept/reject flow and delivery scheduling.',
+    image: 'assets/project-previews/mobile-apps/ordering-store.png',
+    imagePosition: 'top center',
+    tags: ['React Native', 'Node.js', 'Ecommerce'],
+    live: 'https://play.google.com/store/apps/details?id=com.ordering.storeappv5&hl=en_IN'
+  },
+  {
+    title: 'Ordering Driver App',
+    description: 'Delivery driver app with order assignment, route maps, status updates, in-app messaging and multi-delivery management.',
+    image: 'assets/project-previews/mobile-apps/ordering-driver.png',
+    imagePosition: 'top center',
+    tags: ['React Native', 'Node.js'],
+    live: 'https://play.google.com/store/apps/details?id=com.ordering.deliveryv5&hl=en_IN'
+  },
+  {
+    title: 'WMS Bianco',
+    description: 'Warehouse management app with real-time inventory tracking, barcode scanning, pick lists and order processing.',
+    image: 'assets/project-previews/mobile-apps/wms-bianco.png',
+    imagePosition: 'top center',
+    tags: ['React Native', 'Node.js'],
+    live: 'https://play.google.com/store/apps/details?id=com.wmsbianco&hl=en_IN'
+  },
+  {
+    title: 'B2C Template',
+    description: 'Ready-to-use B2C ecommerce mobile app with product browsing, cart, order history, multi-store and multi-language support.',
+    image: 'assets/project-previews/mobile-apps/b2c-template.png',
+    imagePosition: 'top center',
+    tags: ['React Native', 'Node.js', 'Ecommerce'],
+    live: 'https://play.google.com/store/apps/details?id=com.b2ctemplate.app&hl=en_IN'
   }
 ];
 
