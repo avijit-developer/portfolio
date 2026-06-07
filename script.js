@@ -1,6 +1,28 @@
 const menuBtn = document.querySelector('.menu-btn');
 const navLinks = document.querySelector('.nav-links');
 const navAnchors = document.querySelectorAll('.nav-links a');
+const VISITOR_LOG_ENDPOINT = 'https://script.google.com/macros/s/AKfycbzlv6BrilMhweECxjMgyoEX-292TUdQyP4gNJRg3nGKGcr3cDZpXoy2ephXBeI4gmqokw/exec';
+
+const logVisitor = async () => {
+  if (!VISITOR_LOG_ENDPOINT) return;
+
+  try {
+    await fetch(VISITOR_LOG_ENDPOINT, {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+      body: JSON.stringify({
+        timestamp: new Date().toISOString(),
+        page: window.location.href,
+        title: document.title
+      })
+    });
+  } catch (error) {
+    // Analytics must never interrupt the portfolio experience.
+  }
+};
+
+logVisitor();
 
 menuBtn.addEventListener('click', () => {
   navLinks.classList.toggle('show');
